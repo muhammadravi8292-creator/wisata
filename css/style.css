@@ -1,0 +1,307 @@
+/*=========================================
+SIWA
+Sistem Informasi Wisata Indonesia
+Sprint 2 - CSS
+Versi: 1.3.0
+Episode 13: Menghubungkan CSS
+=========================================*/
+
+/*=========================================
+RESET CSS
+=========================================*/
+
+/*=========================================
+TYPOGRAPHY & BASE
+=========================================*/
+body {
+    margin: 0; 
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color:  #f5f7fa;
+}
+
+/*=========================================
+HEADER
+=========================================*/
+.header {
+    background-color: #0f4c81;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.site-title {
+    font-size: 28px;
+    margin: 10px 0;
+    color:#ffffff;
+}
+
+.site-tagline{
+    margin: 0;
+    font-size: 16;
+    color: #dbeafe;
+}
+/*=========================================
+NAVIGATION
+=========================================*/
+.navbar {
+    background-color: #083358;
+    padding: 15px 20px;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-link {
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffd166; 
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*=========================================
+HERO SECTION
+=========================================*/
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 8%;
+    background-color: #eaf4ff;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.hero-title {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #0f4c81;
+}
+
+.hero-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.hero-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0f4c81;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background-color: #083358;
+}
+/*=========================================
+DESTINASI WISATA
+=========================================*/
+.destinations {
+    padding: 60px 8%;
+    background-color: #eaf9ff;
+}
+
+.destination-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.destination-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12)
+}
+
+.destination-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.destination-title {
+    font-size: 22px;
+    margin: 16px;
+    color: #0f4c81;
+}
+
+.destination-text {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 20px 16px;
+    color: #64748b;
+}
+
+.btn-detail {
+    display: inline-block;
+    margin: 0 20px 20px;
+    padding: 10px 20px;
+    background-color: #0f4c81;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-detail:hover {
+    background-color: #083358;
+}
+/*=========================================
+MEDIA WISATA
+=========================================*/
+.media {
+    padding: 60px 8%;
+    background-color: #eaf9ff;
+}
+
+.media-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.media-audio,
+.media-video,
+.media-map {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.media-audio h3,
+.media-video h3,
+.media-map h3 {
+    color: #0f4c81;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.audio-player {
+    width: 100%;
+}
+
+.video-player {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.map-frame {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 10px;
+}
+
+/*=========================================
+KONTAK
+=========================================*/
+.contact {
+    padding: 60px 8%;
+    background-color: #eaf9ff;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.contact-address,
+.contact-phone,
+.contact-email,
+.contact-wa,
+.contact-hours {
+    flex: 1;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.contact-phone a,
+.contact-email a,
+.contact-wa a {
+    color: #0f4c81;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-phone a:hover,
+.contact-email a:hover,
+.contact-wa a:hover {
+    color: #083358;
+    text-decoration: underline;
+}
+
+/*=========================================
+INFORMASI WISATA (TABLE)
+=========================================*/
+
+/*=========================================
+INFORMASI TAMBAHAN (LIST)
+=========================================*/
+
+/*=========================================
+FORM PEMESANAN
+=========================================*/
+
+/*=========================================
+FOOTER
+=========================================*/
