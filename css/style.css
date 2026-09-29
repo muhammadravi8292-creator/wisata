@@ -293,15 +293,259 @@ KONTAK
 /*=========================================
 INFORMASI WISATA (TABLE)
 =========================================*/
+.information {
+    padding: 60px 8%;
+    background-color: #eaf9ff;
+}
+
+.table-title {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #0f4c81;
+    font-size: 24px;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.info-table th,
+.info-table td {
+    padding: 15px;
+    border: 1px solid #d9e2ec;
+    text-align: left;
+}
+
+.info-table th {
+    background-color: #0f4c81;
+    color:  white;
+}
+
+.info-table tr:hover {
+    background-color: #eaf4ff;
+}
 
 /*=========================================
 INFORMASI TAMBAHAN (LIST)
 =========================================*/
+.information-list {
+    padding: 60px 8%;
+    background-color: #eaf9ff;
+}
+
+.facility,
+.rules,
+.booking-step {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #f5f7fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.list-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #0f4c81;
+    font-size: 24px;
+}
+
+.facility-list,
+.rules-list,
+.booking-list {
+    margin: 0;
+    padding-left: 25px;
+}
+
+.facility-list li,
+.rules-list li,
+.booking-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.facility-list li:last-child,
+.rules-list li:last-child,
+.booking-list li:last-child {
+    margin-bottom: 0;
+} 
 
 /*=========================================
 FORM PEMESANAN
 =========================================*/
+.booking {
+    padding: 60px 8%;
+    background-color: #eaf9ff;
+}
+
+.booking-form {
+    max-width: 700px;
+    margin: 40px auto 0;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #0f4c81;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #0f4c81;
+    box-shadow: 0 0 0 3px #dbeafe;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0f4c81;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.btn-submit:hover {
+    background-color: #083358;
+}
 
 /*=========================================
 FOOTER
 =========================================*/
+.footer {
+    padding: 50px 8%;
+    background-color: #083358;
+    color: white;
+    text-align: center;
+}
+
+.footer-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.footer-description {
+    margin-bottom: 15px;
+    color: #dbeafe;
+}
+
+.footer-copy {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color:  #dbeafe;
+}
+
+.footer-subtitle {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-item {
+    display: inline-block;
+}
+
+.footer-link {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #ffd166;
+}
+
+/*=========================================
+RESPONSIVE DESIGN (Episode 26)
+=========================================*/
+@media (max-width: 768px) {
+    /*HEADER*/
+    .header {
+        padding: 25px 15px;
+    }
+    .site-title {
+        font-size: 32px;
+    }
+    .site-tagline {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    /*Navigation*/
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    /*Hero*/
+    .hero {
+        flex-direction: column;
+        padding: 40px 6%;
+        text-align: center;
+    }
+    .hero-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    /*Destinasi & Media*/
+    .destination-list,
+    .media-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    /*Kontak & footer*/
+    .contact-content,
+    .footer-links {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    /*Form*/
+    .booking-form {
+        padding: 20px;
+    }
+}
+
+
