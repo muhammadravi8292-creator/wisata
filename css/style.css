@@ -548,4 +548,10 @@ RESPONSIVE DESIGN (Episode 26)
     }
 }
 
-
+.judul-highlight {
+    background-color: #93dce9;
+    color: #083358;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
