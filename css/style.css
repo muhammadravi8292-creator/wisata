@@ -113,6 +113,7 @@ HERO SECTION
     font-size: 42px;
     margin-bottom: 20px;
     color: #0f4c81;
+    transition: all 0.5s ease;
 }
 
 .hero-description {
@@ -140,7 +141,7 @@ DESTINASI WISATA
 =========================================*/
 .destinations {
     padding: 60px 8%;
-    background-color: #eaf9ff;
+    background-color: #eaf4ff;
 }
 
 .destination-list {
@@ -201,7 +202,7 @@ MEDIA WISATA
 =========================================*/
 .media {
     padding: 60px 8%;
-    background-color: #eaf9ff;
+    background-color: #eaf4ff;
 }
 
 .media-content {
@@ -249,7 +250,7 @@ KONTAK
 =========================================*/
 .contact {
     padding: 60px 8%;
-    background-color: #eaf9ff;
+    background-color: #eaf4ff;
 }
 
 .contact-content {
@@ -295,7 +296,7 @@ INFORMASI WISATA (TABLE)
 =========================================*/
 .information {
     padding: 60px 8%;
-    background-color: #eaf9ff;
+    background-color: #eaf4ff;
 }
 
 .table-title {
@@ -332,7 +333,7 @@ INFORMASI TAMBAHAN (LIST)
 =========================================*/
 .information-list {
     padding: 60px 8%;
-    background-color: #eaf9ff;
+    background-color: #eaf4ff;
 }
 
 .facility,
@@ -377,7 +378,7 @@ FORM PEMESANAN
 =========================================*/
 .booking {
     padding: 60px 8%;
-    background-color: #eaf9ff;
+    background-color: #eaf4ff;
 }
 
 .booking-form {
@@ -549,9 +550,14 @@ RESPONSIVE DESIGN (Episode 26)
 }
 
 .judul-highlight {
-    background-color: #93dce9;
-    color: #083358;
+    background-color: #e28b28;
+    color: #0a1a27;
     padding: 15px;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: all 0.5s ease;
+}
+.card-active {
+    background-color: #c7e0fa;
+    border: 3px solid #0f4c81;
+    transform: translateY(-8px)
 }
