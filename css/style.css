@@ -74,13 +74,16 @@ NAVIGATION
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #ffd166; 
-    text-decoration: underline;
+    color: #07203d; 
+    background: #fab152;
     cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.29);
 }
 
 /*=========================================
@@ -487,6 +490,8 @@ FOOTER
 
 .footer-link:hover {
     color: #ffd166;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /*=========================================
@@ -550,8 +555,8 @@ RESPONSIVE DESIGN (Episode 26)
 }
 
 .judul-highlight {
-    background-color: #e28b28;
-    color: #0a1a27;
+    background-color: #fab152;
+    color: #051727;
     padding: 15px;
     border-radius: 10px;
     transition: all 0.5s ease;
