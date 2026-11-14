@@ -1,12 +1,14 @@
-const heroButton = document.querySelector(".hero-button");
 const heroTitle = document.querySelector(".hero-title");
 const heroDescription = document.querySelector(".hero-description")
+const heroButton = document.querySelector(".hero-button");
 heroButton.addEventListener("click", function() {
     heroTitle.textContent = "Ayo Jelajahi Wisata Indonesia!";
     heroDescription.textContent = "Temukan Pantai, Gunung, dan destinasi wisata menarik di Indonesia!";
     if (heroTitle.classList.contains("judul-highlight")) {
         heroTitle.classList.remove("judul-highlight");
-        heroButton.textContent = "Aktifkan Highlight";
+        heroTitle.textContent = "SIWA"
+        heroDescription.textContent = "Temukan destinasi wisata terbaik dengan informasi lengkap, mudah, dan t"
+        heroButton.textContent = "Jelajahi Sekarang";
     }else{
         heroTitle.classList.add("judul-highlight");
         heroButton.textContent = "Nonaktifkan Highlight";
