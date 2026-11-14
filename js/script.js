@@ -7,7 +7,7 @@ heroButton.addEventListener("click", function() {
     if (heroTitle.classList.contains("judul-highlight")) {
         heroTitle.classList.remove("judul-highlight");
         heroTitle.textContent = "SIWA"
-        heroDescription.textContent = "Temukan destinasi wisata terbaik dengan informasi lengkap, mudah, dan t"
+        heroDescription.textContent = "Temukan destinasi wisata terbaik dengan informasi lengkap, mudah, dan terpercaya"
         heroButton.textContent = "Jelajahi Sekarang";
     }else{
         heroTitle.classList.add("judul-highlight");
